@@ -6,19 +6,9 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+This block diagram outlines my soil moisture sensing subsystem and how it connects to our team’s plant project. The subsystem operates from a regulated 5 V rail powering the sensor, op-amp, and MCU. A capacitive moisture sensor feeds a single-supply, non-inverting op-amp, and the conditioned voltage is sampled by the MCU, ADC on RA0. For team integration, RA1 is wired to Connector 1 (pin 1) which is a digital parallel line, and PWM on RB2 is reserved for a future water pump.
 
+## Block Diagram 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
-
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![BlockDiagram](docs/ibd.png)
