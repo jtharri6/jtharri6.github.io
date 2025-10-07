@@ -11,4 +11,4 @@ This block diagram outlines my soil moisture sensing subsystem and how it connec
 
 ## Block Diagram 
 
-![BlockDiagram](docs/ibd.png)
+![BlockDiagram](docs/01-Block-Diagram/ibd.png)
