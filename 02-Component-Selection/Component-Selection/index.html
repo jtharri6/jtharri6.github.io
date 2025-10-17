@@ -765,7 +765,8 @@
 
   <h1>Component Selection</h1>
 
-<p><strong>Description</strong></p>
+<p><strong>Description</strong>
+This section compares and selects key parts used in the soil moisture subsystem. Each component was chosen based on performance, compatibility with the circuit, cost, and ease of integration. The final selections provide accurate sensing and reliable operation while keeping the design simple and efficient.</p>
 <p>*Table 1: Soil Moisture Component Options</p>
 <p><strong>Soil Moisture Sensor (Subsystem)</strong></p>
 <table>
@@ -794,7 +795,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Rationale</strong> 
+The DFRobot capacitive soil moisture sensor was chosen because it offers a simple and reliable way to measure soil moisture using an analog signal that connects directly to the microcontroller’s ADC. Its corrosion-resistant design improves durability compared to older resistive probes, which is important for repeated testing and long-term use. The sensor operates from 3.3 V to 5 V, making it fully compatible with our system’s 5 V power rail. It is also affordable, easy to integrate, and well-documented, which helps reduce development time and potential circuit issues.</p>
 
 
 
