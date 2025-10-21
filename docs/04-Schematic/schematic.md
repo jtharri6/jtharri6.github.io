@@ -13,4 +13,4 @@ This schematic is designed to support a soil moisture sensing subsystem powered 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](106_JT_Harrison.pdf), and the Zip folder of the project [*here*](ECADSOIL.zip).
+The schematic as a PDF download is available [*here*](106_JT_Harrison.pdf), and the Zip folder of the project [*here*](ECADSOIL.zip)
