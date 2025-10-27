@@ -7,8 +7,12 @@ tags:
 
 ## Overview
 
-This block diagram outlines my soil moisture sensor subsystem and how it connects to our team’s plant project. The subsystem operates from a regulated 5 V rail powering the sensor, op-amp, and MCU. A capacitive moisture sensor feeds a single-supply, non-inverting op-amp, and the conditioned voltage is sampled by the MCU, ADC on RA0. For team integration, RA1 is wired to Connector 1 (pin 1) which is a digital parallel line, and PWM on RB2 is reserved for a future water pump.
+This block diagram shows my soil moisture subsystem and how it connects to our team’s plant monitoring system. It runs on a regulated 5 V supply that powers the sensor, op amp, and microcontroller. The sensor sends an analog signal through the op amp before being read by the microcontroller’s ADC on RA0. For system integration, RA2 connects to an 8-pin header that communicates with the water pump subsystem.
 
 ## Block Diagram 
 
-![BlockDiagram](ibd.png)
+![BlockDiagram](smblock.png)
+
+**Figure 1:** *Soil Moisture Sensor Subsystem*
+
+[Download Soil Moisture Block Diagram (PDF)](smblock.pdf)

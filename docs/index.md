@@ -7,28 +7,28 @@ tags:
 <center>
 <font size= "6">JT Harrison Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Smart Plant System Project</font><br>
 for<br>
 <font size= "5"> Team 106 </font><br>
 
-**Submission: month, DD, YYYY**
+**Submission: October 29, 2025**
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* This page highlights my soil moisture subsystem, which monitors soil conditions and helps the system decide when plants need water. It covers my component selection, circuit schematic, block diagram, bill of materials, and power budget for this part of the project.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+* Our team is developing an automatic plant monitoring system that manages both lighting and watering to simplify plant care. My individual focus is the soil moisture subsystem, which measures the moisture level in the soil and communicates that data to the main controller. This helps the system decide when watering is needed to keep plants healthy and reduce water waste. My work includes selecting components, designing the schematic, and creating a power budget to ensure reliable performance within the overall system.
+
+* Team Website  
+[Click here to visit our Team 106 Project Page](https://asu-egr304-2025-f-106.github.io/ASU-EGR304-2025-F-106/)
 
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
-
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
-
-For all the sections
+* Designed the soil moisture subsystem and its schematic.
+* Chose and tested components for reliable readings.
+* Created the block diagram, BOM, and power budget.
+* Helped connect my subsystem with the team’s main system.

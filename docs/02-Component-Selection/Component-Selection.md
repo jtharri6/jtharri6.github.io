@@ -3,6 +3,7 @@ title: Component Selection
 ---
 
 **Description**
+
 This section compares and selects key parts used in the soil moisture subsystem. Each component was chosen based on performance, compatibility with the circuit, cost, and ease of integration. The final selections provide accurate sensing and reliable operation while keeping the design simple and efficient.
 
 *Table 1: Soil Moisture Component Options
@@ -16,4 +17,13 @@ This section compares and selects key parts used in the soil moisture subsystem.
 | ![](op1sen.png)<br>Option 3.<br> SunFounder Capacitive Soil Moisture Sensor Module<br>$7/each<br>[link to product](https://www.sunfounder.com/products/capacitive-soil-moisture-sensor-module?variant=44245636677867&country=US&currency=USD&utm_source=chatgpt.com)                 | \* Capacitive design (better durability vs resistive probes)<br>\* compatible with most microcontrollers<br>\* Analog output, so it plugs into ADC input easily                                                | \* Output may suffer from noise, especially with long wires <br>\* CNot completely waterproof unless sealed <br>\* Needs calibration per soil type and environment |
 
 **Rationale** 
-The DFRobot capacitive soil moisture sensor was chosen because it offers a simple and reliable way to measure soil moisture using an analog signal that connects directly to the microcontroller’s ADC. Its corrosion-resistant design improves durability compared to older resistive probes, which is important for repeated testing and long-term use. The sensor operates from 3.3 V to 5 V, making it fully compatible with our system’s 5 V power rail. It is also affordable, easy to integrate, and well-documented, which helps reduce development time and potential circuit issues.
+
+The capacitive soil moisture sensor was chosen because it is simple, reliable, and works well with our system.
+
+* Uses an analog signal that connects directly to the microcontroller’s ADC.
+
+* Has a corrosion resistant design for better durability and long-term use.
+
+* Works with our 5 V power supply.
+
+* Easy to set up, affordable, and well supported with documentation.
