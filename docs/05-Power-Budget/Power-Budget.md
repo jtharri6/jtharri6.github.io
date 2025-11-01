@@ -3,20 +3,14 @@ title: Power Budget
 ---
 
 ## Overview
-Write a overview of what you did and why you did a Power Budget.
+I made a power budget to find out how much power my Soil Moisture System uses and to be sure all components run safely. It helped me check that my 9 V wall adapter and 5 V regulator can handle the total current and keep the system reliable.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
-
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
-
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
-
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
+![budget1](PB.png)
 
 ## Conclusions
 
-From the prepare Power Budget, .....
+From the prepared Power Budget, I confirmed that my 9 V wall adapter and 5 V regulator can safely power the entire Soil Moisture System. The results show that all components operate within limits.
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [*here*](PB.pdf), and a Microsoft Excel Sheet [*here*](PB.xlsx).
