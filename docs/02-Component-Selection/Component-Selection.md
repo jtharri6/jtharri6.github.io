@@ -18,7 +18,7 @@ This section compares and selects key parts used in the soil moisture subsystem.
 
 **Rationale** 
 
-The capacitive soil moisture sensor was chosen because it is simple, reliable, and works well with our system.
+The Sunfounder capacitive soil moisture sensor option 3 was chosen because it is simple, reliable, and works well with our system.
 
 * Uses an analog signal that connects directly to the microcontroller’s ADC.
 

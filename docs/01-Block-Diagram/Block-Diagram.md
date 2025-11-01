@@ -11,8 +11,7 @@ This block diagram shows my soil moisture subsystem and how it connects to our t
 
 ## Block Diagram 
 
-![BlockDiagram](smblock.png)
-
+![BlockDiagram](dia.png)
 **Figure 1:** *Soil Moisture Sensor Subsystem*
 
-[Download Soil Moisture Block Diagram (PDF)](smblock.pdf)
+[Download Soil Moisture Block Diagram (PDF)](dia.pdf)
