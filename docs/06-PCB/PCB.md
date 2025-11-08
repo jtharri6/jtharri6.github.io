@@ -4,6 +4,7 @@ title: PCB
 
 ## Overview
 
+This PCB layout shows the front and back design of my soil moisture sensing subsystem. It includes all major components such as the voltage regulator, op amp, microcontroller, and connectors for team integration. The layout provides clear routing for power, ground, and signal paths to ensure stable performance and easy testing within the full plant monitoring system.
 
 ## PCB (Front)
 
