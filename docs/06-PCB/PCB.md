@@ -5,9 +5,16 @@ title: PCB
 ## Overview
 
 
-![budget1](PB.png)
+## PCB (Front)
 
+![pcbf](top.png)
+
+## PCB (Back)
+
+![pcbb](bot.png)
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PB.pdf), and a Microsoft Excel Sheet [*here*](PB.xlsx).
+The PCB (Front) as a PDF download is available [*here*](top.pdf), and the PCB (Back) [*here*](bot.pdf).
+
+The Zip folder of the project [*here*](entire.zip)
