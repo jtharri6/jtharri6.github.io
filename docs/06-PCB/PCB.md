@@ -18,4 +18,5 @@ This PCB layout shows the front and back design of my soil moisture sensing subs
 
 The PCB (Front) as a PDF download is available [*here*](top.pdf), and the PCB (Back) [*here*](bot.pdf).
 
+The Zip folder of the Gerber [*here*](Harrison.JT.zip)
 The Zip folder of the project [*here*](entire.zip)
