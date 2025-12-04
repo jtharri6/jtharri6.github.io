@@ -18,4 +18,4 @@ This PCB layout shows the front and back design of my soil moisture sensing subs
 
 The PCB (Front) as a PDF download is available [*here*](fpcb.pdf), and the PCB (Back) [*here*](bpcb.pdf).
 
-The Zip folder of the Gerber files [*here*](newgerb.zip), and the Zip folder of ECAD project [*here*](entire.zip)
+The Zip folder of the Gerber files [*here*](newgerb.zip), and the Zip folder of ECAD project [*here*](FINAL_SENSOR.zip)
