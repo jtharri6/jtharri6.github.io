@@ -2,6 +2,10 @@
 title: Resources - Files
 ---
 
+**Power Budget**
+
+The power budget as a PDF download is available [*here*](nb.pdf), and a Microsoft Excel Sheet [*here*](PB11.xlsx).
+
 **Schematic**
 
 The soil subsystem schematic as a PDF download is available [*here*](s.pdf).
