@@ -55,3 +55,12 @@ The 9V wall adapter with a voltage regulator was chosen because it provides a st
 * gives reliable and consistent power for the entire circuit
 
 * system can operate anywhere with a wall outlet and affordable
+
+**SUMMARY**
+
+| Main Components Choosen | Purpose | Reason Chosen |
+|----------|----------|---------------|
+| Copper Tubing | Soil moisture sensing | simple, low cost, and gives clear moisture changes |
+| MCP6004 Op-Amp | Signal conditioning | provides a smooth amplified signal the PIC can read |
+| 9V Barrel Jack + Regulator | Power supply | gives steady power and lets the system run anywhere with an outlet |
+
