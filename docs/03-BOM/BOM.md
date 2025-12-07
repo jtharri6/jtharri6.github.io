@@ -10,5 +10,5 @@ This Bill of Materials lists all the main parts used in my soil moisture sensor 
 
 ## Bill of Materials
 
-![BOM](bom1.png)
-**Figure 2:** *List of components used on the soil moisture system*
+![BOM](b.png)
+**Figure 1:** *List of components used on the soil moisture system*
