@@ -9,7 +9,7 @@ This schematic is designed to support a soil moisture sensing subsystem powered 
 
 ![schematic](s.png)
 
-**Figure 03:** *Soil Moisture Sensor Schematic*
+**Figure 02:** *Soil Moisture Sensor Schematic*
 
 
 ## Resouces
