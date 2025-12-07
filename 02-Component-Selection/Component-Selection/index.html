@@ -899,7 +899,6 @@
 
 <p><strong>Description</strong></p>
 <p>This section compares and selects key parts used in the soil moisture subsystem. Each component was chosen based on performance, compatibility with the circuit, cost, and ease of integration. The final selections provide accurate sensing and reliable operation while keeping the design simple and efficient.</p>
-<p>*Table 1: Soil Moisture Component Options</p>
 <p><strong>Soil Moisture Sensor (Subsystem)</strong></p>
 <table>
 <thead>
@@ -912,35 +911,99 @@
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../op1sen.png" data-desc-position="bottom"><img alt="" src="../op1sen.png"></a><br>Option 1.<br> DFRobot Capacitive Soil Moisture Sensor v1.2 (Analog)<br>$10/each<br><a href="https://www.dfrobot.com/product-1385.html">link to product</a></td>
-<td>* Capacitive design resists corrosion better <br>* Simple analog voltage output compatible with microcontroller ADCs <br>* Wide community support, documentation, and example circuits</td>
-<td>* Analog signal can fluctuate with noise <br>* Cable length can introduce noise without shielding <br>* Not fully waterproof out of the box</td>
+<td>* capacitive design resists corrosion better <br>* simple analog voltage output compatible with microcontroller ADCs <br>* wide community support, documentation, and example circuits</td>
+<td>* analog signal can fluctuate with noise <br>* cable length can introduce noise without shielding <br>* not fully waterproof out of the box</td>
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../opsen2.png" data-desc-position="bottom"><img alt="" src="../opsen2.png"></a><br>* Option 2. <br>* Adafruit STEMMA Soil Sensor (Digital Capacitive) <br>* $7.50/each <br>* <a href="https://www.adafruit.com/product/4026">Link to product</a></td>
-<td>* Provides digital I²C output, reducing analog noise <br>* Built in temperature sensing for compensation <br> * Easy connection via STEMMA system</td>
-<td>* Requires I²C communication setup and address management <br>* Needs level shifting if using a 5 V microcontroller <br>* Higher cost compared to analog sensors</td>
+<td>* provides digital I²C output, reducing analog noise <br>* built in temperature sensing for compensation <br> * easy connection via STEMMA system</td>
+<td>* requires I²C communication setup and address management <br>* needs level shifting if using a 5 V microcontroller <br>* higher cost compared to analog sensors</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../op3.png" data-desc-position="bottom"><img alt="" src="../op3.png"></a><br>Option 3.<br> SunFounder Capacitive Soil Moisture Sensor Module<br>$7/each<br><a href="https://www.sunfounder.com/products/capacitive-soil-moisture-sensor-module?variant=44245636677867&amp;country=US&amp;currency=USD&amp;utm_source=chatgpt.com">link to product</a></td>
-<td>* Capacitive design (better durability vs resistive probes)<br>* compatible with most microcontrollers<br>* Analog output, so it plugs into ADC input easily</td>
-<td>* Output may suffer from noise, especially with long wires <br>* CNot completely waterproof unless sealed <br>* Needs calibration per soil type and environment</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../cop.png" data-desc-position="bottom"><img alt="" src="../cop.png"></a><br>Option 3.<br> Copper Tubing <br>$3.59/each<br><a href="https://www.acehardware.com/departments/hardware/metal-sheets-and-rods/copper-tubes/5039471">link to product</a></td>
+<td>* very cheap and easy to cut to size <br>* works easily with  analog circuit and setting up <br>* provide clear changes between wet and dry soil</td>
+<td>* the probes can corrode over time in wet soil <br>* they need calibration because different soils give different readings <br>* wire connection is not waterproof unless sealed</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Rationale</strong> </p>
-<p>The Sunfounder capacitive soil moisture sensor option 3 was chosen because it is simple, reliable, and works well with our system.</p>
+<p>The copper tubing soil probes were chosen because they are simple, inexpensive, and work well with the custom analog circuit we designed for our soil sensor system.</p>
 <ul>
 <li>
-<p>Uses an analog signal that connects directly to the microcontroller’s ADC.</p>
+<p>provide a clear analog moisture signal that works with PIC</p>
 </li>
 <li>
-<p>Has a corrosion resistant design for better durability and long-term use.</p>
+<p>Easy to build, modify, and replace</p>
 </li>
 <li>
-<p>Works with our 5 V power supply.</p>
+<p>Works with our 5 V power supply and affordable</p>
+</li>
+</ul>
+<p><strong>Signal Conditioning</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mcp.png" data-desc-position="bottom"><img alt="" src="../mcp.png"></a><br>Option 1.<br> MCP6004 Op-Amp <br>$0.54/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004T-I-SL/523092">link to product</a></td>
+<td>* provided in class <br>* works well with low voltages like 5 volts, which matches the PIC microcontroller <br>* wide community support, documentation</td>
+<td>* limited output drive strength for heavier loads <br>* not as widely available <br>* requires more careful wiring and layout to avoid noise in the signal</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../ti.png" data-desc-position="bottom"><img alt="" src="../ti.png"></a><br>* Option 2. <br>* LM358B Op-Amp <br>* $0.54/each <br>* <a href="https://www.ti.com/product/LM358B#order-quality">Link to product</a></td>
+<td>* extremely common and easy to find at any electronics store <br>* handle basic signal amplification <br> * very easy to use for beginners and works in many basic circuits</td>
+<td>* does not perform as well with very low input signals <br>* can have output distortion when running on a single 5 volt supply <br>* can limit measurement accuracy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rationale</strong> </p>
+<p>The MCP6004 was chosen because it works well at 5 volts, gives stable readings, and integrates easily with the PIC microcontroller in our soil sensor system.</p>
+<ul>
+<li>
+<p>gives a smooth output the microcontroller can read</p>
 </li>
 <li>
-<p>Easy to set up, affordable, and well supported with documentation.</p>
+<p>improves the strength of the soil moisture signal</p>
+</li>
+<li>
+<p>Works with our 5 V power supply and affordable</p>
+</li>
+</ul>
+<p><strong>Power Supply</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Option 1.<br> 9V Barrel Jack (with voltage regulator to 5V) <br></td>
+<td>* provided in class <br>* allows the project to run away from a computer. <br>* provides more reliable current for sensors and add-on circuits</td>
+<td>* requires a voltage regulator to step down from 9V to 5V <br>* regulator can generate heat <br>* depends on wall-outlet access for operation</td>
+</tr>
+<tr>
+<td>Option 2. <br>* Built-In USB 5V Plugin from PIC <br></td>
+<td>* stable 5-volt supply for the whole circuit <br>* powers the board and code together <br> * readings remain consistent</td>
+<td>* must stay plugged into a computer or USB charger <br>* cannot provide much current for bigger loads <br>* portability hindered</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rationale</strong> </p>
+<p>The 9V wall adapter with a voltage regulator was chosen because it provides a steady power source and allows the system to run without relying on a computer connection.</p>
+<ul>
+<li>
+<p>gives reliable and consistent power for the entire circuit</p>
+</li>
+<li>
+<p>system can operate anywhere with a wall outlet and affordable</p>
 </li>
 </ul>
 
