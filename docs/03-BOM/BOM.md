@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Overview
-This Bill of Materials lists all the main parts used in my soil moisture sensor subsystem. Most components like the resistors, capacitors, op amp, and microcontroller were provided by the lab. A few key items, such as the soil moisture sensor, fuse, test points, and JST headers, were ordered from Digikey and SunFounder. The total cost for ordered parts was $14.17 which is well under budget.
+This Bill of Materials lists all the main parts used in my soil moisture sensor subsystem. Most components, such as the resistors, capacitors, op amp, and microcontroller, were provided by the lab. The copper tubing used for the soil probes was purchased from Ace Hardware. The other items I ordered, including the JST headers, fuse holder, and test points, were ordered from DigiKey. The total cost of the parts I purchased was $14.96, which stays under budget.
 
 ## Bill of Materials
 
