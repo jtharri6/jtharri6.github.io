@@ -43,10 +43,23 @@ The MCP6004 was chosen because it works well at 5 volts, gives stable readings, 
 
 **Power Supply**
 
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Option 1.<br> 9V Barrel Jack (with voltage regulator to 5V) <br> | \* provided in class <br>\* allows the project to run away from a computer. <br>\* provides more reliable current for sensors and add-on circuits                                             | \* requires a voltage regulator to step down from 9V to 5V <br>\* regulator can generate heat <br>\* depends on wall-outlet access for operation |
-| Option 2. <br>\* Built-In USB 5V Plugin from PIC <br> | \* stable 5-volt supply for the whole circuit <br>\* powers the board and code together <br> \* readings remain consistent | * must stay plugged into a computer or USB charger <br>\* cannot provide much current for bigger loads <br>\* portability hindered                                                          |
+## Power Supply
+
+| Solution                                   | Pros                                                                 | Cons                                                               |
+|--------------------------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Option 1.** 9V Barrel Jack (with 5V regulator) | * provided in class  
+* allows the project to run away from a computer  
+* provides reliable current for sensors and add-on circuits | * requires a 9V-to-5V regulator  
+* regulator can generate heat  
+* depends on wall-outlet access |
+| **Option 2.** Built-In USB 5V from PIC     | * stable 5V supply for the whole circuit  
+* powers the board and code together  
+* readings remain consistent | * must stay plugged into a computer or USB charger  
+* limited current for bigger loads  
+* reduces portability |
+| **Option 3.** Battery Pack | * fully portable power source  
+* provides clean, isolated power with low noise | * battery life depends on usage and load  
+* requires replacing or recharging batteries |
 
 **Rationale** 
 
