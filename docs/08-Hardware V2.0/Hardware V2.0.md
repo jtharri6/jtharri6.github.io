@@ -2,6 +2,37 @@
 title: Hardware V2.0
 ---
 
-For a Version 2 of my soil systemdesign, I would keep using copper tubing for the soil probe but improve how it is built. One change would be using slightly thinner as well as shorter copper rods so the sensor reacts more quickly to moisture changes and fits easier into the soil. Adjusting the spacing between the rods would also help create a more consistent reading and reduce issues with soil packing around the probe. I would also seal the wire connections better to protect them from moisture and provide a secure connection, which would help the readings stay stable. Improving these small details would make the probe more reliable while still keeping the simple copper tubing design.
+For version 2 of my soil sensor, I would still use copper tubing for the probe but add a few small improvements to make the readings more consistent.
 
-The signal conditioning and power design could also be upgraded. This can be done by keeping the analog traces shorter on the PCB which would help reduce noise and give the microcontroller a cleaner signal. Switching to a more efficient regulator instead of the 7805 would reduce heat and make the system more efficient. Finally, reorganizing the PCB layout so the sensor parts and test points are easier to access would simplify assembly and troubleshooting. These improvements would make it easier to maintain, more accurate, and better suited for long term use.
+### Probe Improvements
+- Use thinner and shorter copper tubing for easier soil insertion.
+- Adjust spacing between the rods for more stable readings.
+- Seal the wire connections to protect them from moisture.
+
+### PCB Improvements
+- Shorten analog traces to reduce noise.
+- Use a more efficient voltage regulator.
+- Reorganize the PCB layout so sensor parts and test points are easier to reach.
+
+## Lessons Learned & Recommendations for Future Students
+- Sensor probe matters with material and also designing such as rod spacing and length which can affect the readings.
+- Op amp performance is very sensitive to resistor values and has to make sure it is set up right either buffering or amplifying a signal.
+- Adding test points and LEDs early makes debugging easier.
+- UART output can be tricky to set up correctly so make sure to reread which pins work and read datasheets.
+- Calibrating wet and dry values can be a pain.
+- Breadboard and PCB version of a system don’t always behave the same.
+- Double check footprints on all components and measure if needed.
+- Datasheets are your friend.
+
+
+
+
+
+
+
+
+
+
+
+
+
