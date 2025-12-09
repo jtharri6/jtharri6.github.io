@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#probe-improvements" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -844,6 +849,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Hardware V2.0
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -853,6 +869,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#probe-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probe Improvements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Improvements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned-recommendations-for-future-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned &amp; Recommendations for Future Students
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -930,6 +990,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#probe-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probe Improvements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Improvements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned-recommendations-for-future-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned &amp; Recommendations for Future Students
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -953,8 +1048,30 @@
 
   <h1>Hardware V2.0</h1>
 
-<p>For a Version 2 of my soil systemdesign, I would keep using copper tubing for the soil probe but improve how it is built. One change would be using slightly thinner as well as shorter copper rods so the sensor reacts more quickly to moisture changes and fits easier into the soil. Adjusting the spacing between the rods would also help create a more consistent reading and reduce issues with soil packing around the probe. I would also seal the wire connections better to protect them from moisture and provide a secure connection, which would help the readings stay stable. Improving these small details would make the probe more reliable while still keeping the simple copper tubing design.</p>
-<p>The signal conditioning and power design could also be upgraded. This can be done by keeping the analog traces shorter on the PCB which would help reduce noise and give the microcontroller a cleaner signal. Switching to a more efficient regulator instead of the 7805 would reduce heat and make the system more efficient. Finally, reorganizing the PCB layout so the sensor parts and test points are easier to access would simplify assembly and troubleshooting. These improvements would make it easier to maintain, more accurate, and better suited for long term use.</p>
+<p>For version 2 of my soil sensor, I would still use copper tubing for the probe but add a few small improvements to make the readings more consistent.</p>
+<h3 id="probe-improvements">Probe Improvements</h3>
+<ul>
+<li>Use thinner and shorter copper tubing for easier soil insertion.</li>
+<li>Adjust spacing between the rods for more stable readings.</li>
+<li>Seal the wire connections to protect them from moisture.</li>
+</ul>
+<h3 id="pcb-improvements">PCB Improvements</h3>
+<ul>
+<li>Shorten analog traces to reduce noise.</li>
+<li>Use a more efficient voltage regulator.</li>
+<li>Reorganize the PCB layout so sensor parts and test points are easier to reach.</li>
+</ul>
+<h2 id="lessons-learned-recommendations-for-future-students">Lessons Learned &amp; Recommendations for Future Students</h2>
+<ul>
+<li>Sensor probe matters with material and also designing such as rod spacing and length which can affect the readings.</li>
+<li>Op amp performance is very sensitive to resistor values and has to make sure it is set up right either buffering or amplifying a signal.</li>
+<li>Adding test points and LEDs early makes debugging easier.</li>
+<li>UART output can be tricky to set up correctly so make sure to reread which pins work and read datasheets.</li>
+<li>Calibrating wet and dry values can be a pain.</li>
+<li>Breadboard and PCB version of a system don’t always behave the same.</li>
+<li>Double check footprints on all components and measure if needed.</li>
+<li>Datasheets are your friend.</li>
+</ul>
 
 
 
