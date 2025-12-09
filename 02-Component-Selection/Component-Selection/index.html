@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#power-supply" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -568,6 +573,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -577,6 +593,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Supply
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -930,6 +972,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Supply
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1031,24 +1090,80 @@
 </li>
 </ul>
 <p><strong>Power Supply</strong></p>
+<h2 id="power-supply">Power Supply</h2>
 <table>
 <thead>
 <tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
+<th>Solution</th>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Option 1.<br> 9V Barrel Jack (with voltage regulator to 5V) <br></td>
-<td>* provided in class <br>* allows the project to run away from a computer. <br>* provides more reliable current for sensors and add-on circuits</td>
-<td>* requires a voltage regulator to step down from 9V to 5V <br>* regulator can generate heat <br>* depends on wall-outlet access for operation</td>
+<td><strong>Option 1.</strong> 9V Barrel Jack (with 5V regulator)</td>
+<td>* provided in class</td>
+<td></td>
 </tr>
 <tr>
-<td>Option 2. <br>* Built-In USB 5V Plugin from PIC <br></td>
-<td>* stable 5-volt supply for the whole circuit <br>* powers the board and code together <br> * readings remain consistent</td>
-<td>* must stay plugged into a computer or USB charger <br>* cannot provide much current for bigger loads <br>* portability hindered</td>
+<td>* allows the project to run away from a computer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* provides reliable current for sensors and add-on circuits</td>
+<td>* requires a 9V-to-5V regulator</td>
+<td></td>
+</tr>
+<tr>
+<td>* regulator can generate heat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* depends on wall-outlet access</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Option 2.</strong> Built-In USB 5V from PIC</td>
+<td>* stable 5V supply for the whole circuit</td>
+<td></td>
+</tr>
+<tr>
+<td>* powers the board and code together</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* readings remain consistent</td>
+<td>* must stay plugged into a computer or USB charger</td>
+<td></td>
+</tr>
+<tr>
+<td>* limited current for bigger loads</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* reduces portability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Option 3.</strong> Battery Pack</td>
+<td>* fully portable power source</td>
+<td></td>
+</tr>
+<tr>
+<td>* provides clean, isolated power with low noise</td>
+<td>* battery life depends on usage and load</td>
+<td></td>
+</tr>
+<tr>
+<td>* requires replacing or recharging batteries</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
